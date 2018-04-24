@@ -1,0 +1,159 @@
+<html>
+    <head>
+<link rel="stylesheet" type="text/css" href="sheatS.css">
+</head>
+    <head>
+    <title> publish events  </title>
+</head>
+
+<body a link="black" vlink="black">
+
+
+<center><h1>Publish New Event </h1></center>
+    
+<div class="topnav">
+
+
+    <p> <a href="./Home.html">Home</a>  <a href="./aboutme.html">aboutme</a>  <a href="./publish.html"> publish event</a> </p> 
+    </div> 
+    <div class="content">
+         <fieldset>
+    <legend><h4>Current events</h4> </legend>
+    <div><table>
+<style>
+  table, th, td {
+     border:#c2c2d6;
+
+  }
+  th, td {
+    padding: 10px;
+  }
+</style>
+
+ 
+<table>
+  <tr>
+    <th>Event Name</th>
+    <th>Description event</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Contacts</th>
+    
+  </tr>
+  <tr>
+    <td>event1</td>
+    <td> Social event</td>
+    <td>20\4\2018</td>
+     <td>Riyadh</td>
+    <td>Info@twallamy.com</td>
+    
+  </tr>
+  <tr>
+    <td>even2
+</td>
+    <td>medical</td>
+    <td>21\4\2018</td>
+     <td>Riyadh</td>
+    <td> 0112408868</td>
+    
+  </tr>
+</table>
+        </fieldset>
+    </center>
+<head>
+<title> Add event  </title>
+</head>
+
+<body a link="black" vlink="black">
+
+
+<center><h1>Add Event </h1></center>
+
+
+<form action="/action_page.php">
+  <fieldset>
+  <legend> <h4>Organizer Name</h4>  </legend>
+    
+ <center> First name: <input type="text" id="foo" value=""><br/>
+  Last name: <input type="text" id="koo" value=""><br/>
+    </center>
+</form>
+  </fieldset>
+  <fieldset>
+    <legend><h4>Event Information</h4> </legend>
+
+	 
+<form action="/action_page.php">
+  event name:  <input type="text" id="moo" value=""><br/>
+             Location: <input type="text" id="noo" value=""><br/>
+            Date:          <input type="text" id="ooo" value=""><br/>
+           conect:         <input type="text" id="qoo" value=""><br/>
+  
+  Description event:<select>
+  <option value="medical">medical</option>
+  <option value="social">social</option>
+  <option value="educational">educational</option>
+  <option value="charitable">charitable</option>
+</select>
+  
+</form>
+  
+  <h4>Number of allowed attendees</h4>
+  <form action="">
+  <input type="radio" name="1-10" value="1-10">     1-10<br>
+  <input type="radio" name="10-100" value="10-100" > 10-100<br>
+  <input type="radio" name="100-1000" value="100-1000"> 100-1000
+</form>
+<h4>Event Type</h4>
+  <form action="">
+  <input type="checkbox" name="vehicle"> public<br>
+  <input type="checkbox" name="vehicle" > private<br>
+</form>
+  <center><h4>Additional Notes</h4>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter any Notes here...</textarea></center>
+  </fieldset>
+    </div>
+    <div class="footer">
+  <center> <p id="demo"> <button onclick="myFunction()">publish the event</button></p>
+       </center>
+  <script>
+document.getElementById("demo").addEventListener("click", myFunction);
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "event is published ";
+}
+ </script>
+
+<button onclick="getValue()" onclick="getValue2()" >publish event info </button>
+    </div>
+<p id="boo"></p>
+ 
+<script>
+function getValue() {
+var y = document.getElementById("boo");
+var x = document.getElementById("foo").value;
+var z = document.getElementById("koo").value;
+"------------------------------------------------------";
+var y = document.getElementById("boo");
+var zs = document.getElementById("moo").value;
+"------------------------------------------------------";
+var y = document.getElementById("boo");
+var xc = document.getElementById("noo").value;
+
+"------------------------------------------------------";
+var y = document.getElementById("boo");
+var tt = document.getElementById("ooo").value;
+document.write( "The event will organized by the organizer:" + x +'   ' + z+" The event  name:" + zs+" The event  Location:" + xc+ " The event  Date:" + tt+"<br>");
+"------------------------------------------------------";
+
+var y = document.getElementById("boo");
+var q = document.getElementById("qoo").value;
+document.write( "The event will organized by the organizer:" + x +'   ' + z+" The event  name:" + zs+" The event  Location:" + xc+ " The event  Date:" + tt+" The event  contact:" + q+"<br>");
+"------------------------------------------------------";
+}
+
+</script>
+
+</body>
+</html>
